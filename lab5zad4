@@ -1,6 +1,6 @@
 ==========  zad4  ===================
 liczba = int(input('Podaj wartosc -> '))
-if 0>liczba:
+if liczba<0:
     print(liczba*-1)
 else:
     print(liczba)
