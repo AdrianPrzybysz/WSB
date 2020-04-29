@@ -1,0 +1,6 @@
+print('Wpisz liczbe')
+znak = input()
+try:
+    znak = int(znak)
+except:
+    print('Wpisano nieprawidlowe znaki')
