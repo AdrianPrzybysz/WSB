@@ -1,0 +1,6 @@
+==========  zad4  ===================
+liczba = int(input('Podaj wartosc -> '))
+if 0>liczba:
+    print(liczba*-1)
+else:
+    print(liczba)
