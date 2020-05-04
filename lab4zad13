@@ -1,0 +1,6 @@
+moi_znajomi = {
+  'key1': ['Asterix','Obelix'], 
+  'key2': ['Obelusie', 'Teutates'],
+}
+print(moi_znajomi['key1'])
+print(moi_znajomi['key2'])
