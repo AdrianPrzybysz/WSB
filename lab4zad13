@@ -1,6 +1,6 @@
 moi_znajomi = {
-  'key1': ['Asterix','Obelix'], 
-  'key2': ['Obelusie', 'Teutates'],
+  'Imie': ['Mateusz','Tadeusz'], 
+  'Nazwisko': ['Nowak','Kowalski'],
 }
-print(moi_znajomi['key1'])
-print(moi_znajomi['key2'])
+print(moi_znajomi['Imie'])
+print(moi_znajomi['Nazwisko'])
