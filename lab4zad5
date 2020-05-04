@@ -1,0 +1,3 @@
+imie = "ADRIAN";
+nazwisko = "PRZYBYSZ";
+print(imie.capitalize()+" "+nazwisko.capitalize())
