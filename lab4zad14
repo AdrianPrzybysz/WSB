@@ -1,0 +1,4 @@
+cyfry_rzymskie = {
+  'klucz': ['I','V','X','L','C','D','M'], 
+}
+print(cyfry_rzymskie['klucz'])
