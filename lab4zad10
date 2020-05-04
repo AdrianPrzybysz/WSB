@@ -1,0 +1,4 @@
+filmy = ["Millnerowie", "Stuber", "Grzeczne dzieci", "Flinstonowie"]
+print(filmy);
+filmy.sort();
+print(filmy);
