@@ -1,0 +1,35 @@
+package programowanie;
+
+class trojkat {
+	public static float pole(int a,int h) {
+		return (a*h)/2;
+	}
+	public static float obwod(int a,int b,int c) {
+		return a+b+c;
+	}
+	public static boolean czyTrojkat(int a,int b,int c) {
+		if(a+b > c && a+c > b && b+c > a) 
+			return true;
+			else
+			return false;
+	}
+}
+
+public class zadanie6 {
+	public static void main(String[] args) {
+//============================================
+		int a = 5;
+		int b = 4;
+		int c = 3;
+		int h = 3;
+//============================================
+		trojkat a1 = new trojkat(); // a1
+		if(a1.czyTrojkat(a,b,c) == true){
+			System.out.println("==Trojkat istnieje==\n====================");
+		}else{
+			System.out.println("==Trojkat nie istnieje==\n====================");
+		}		
+		System.out.println("Pole trojkata " + a + "/" + b + "/" + c + " " + "wynosi: "+ a1.pole(a,h));
+		System.out.println("Obwód trojkata " + a + "/" + b + "/" + c + " " + "wynosi: " + a1.obwod(a,b,c));
+	}
+}
