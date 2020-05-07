@@ -1,0 +1,10 @@
+import math
+def monotonicznosc(a,x,b):
+  if a==0:
+    print('funkcja stala')
+  elif a>0:
+    print('funkcja rosnaca')
+  elif a<0:
+    print('funkcja malejaca')
+
+monotonicznosc(2,4,5)
