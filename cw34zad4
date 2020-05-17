@@ -1,0 +1,21 @@
+package programowanie;
+
+class Miara {
+	public static double przelicznik1(double droga) {
+		return droga*0.62137;
+	}
+	public static double przelicznik2(double droga) {
+		return droga*0.00062137;
+	}
+}
+//==========================================
+public class cw34zad4 {
+	public static void main(String[] args) {
+		double droga = 100;
+		
+		Miara a = new Miara();
+		
+		System.out.println(droga + "km w przeliczeniu na mile wynosi --> " + a.przelicznik1(droga)+" mili");
+		System.out.println(droga + "m w przeliczeniu na mile wynosi --> " + a.przelicznik2(droga)+" mili");
+	}
+}
