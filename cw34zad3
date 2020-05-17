@@ -6,10 +6,10 @@ public class cw34zad3 {
 		int a = losowa(5,10);
 		int b = losowa(5,10);
 		int tab[][] = new int[a][b];
-		Random r = new Random();
+		Random los = new Random();
 		for(int i = 0; i<a; i++) {
 			for(int j = 0; j<b; j++) {
-				tab[i][j] = r.nextInt(100);
+				tab[i][j] = los.nextInt(100);
 				System.out.print(tab[i][j] + " ");
 			}
 			System.out.println();
