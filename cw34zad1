@@ -1,0 +1,19 @@
+package programowanie;
+import java.util.Random;
+
+public class cw34zad1 {
+	
+	public static void main(String[] args) {
+		int tab[] = new int[5];
+		
+		Random los = new Random();
+		for(int i=0;i<5;i++) {
+			tab[i] = los.nextInt(100);
+			System.out.print(tab[i]*1.0+" ");	
+		}
+		System.out.println();
+		for(int i=0;i<5;i++) {
+			System.out.print(tab[i]*0.5+" ");
+		}
+	}
+}
