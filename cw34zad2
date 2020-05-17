@@ -1,0 +1,29 @@
+package programowanie;
+
+public class cw34zad2 {
+	public static void main(String[] args) {
+		int szkola[] = new int[32];
+		int dzien = 1;
+		for(int i = 1; i<=31; i++){
+			if(dzien == 2){
+				szkola[i] = 7;
+				dzien++;
+			}else if (dzien == 3){
+				szkola[i] = 3;
+				dzien++;
+			}else if(dzien == 4){
+				szkola[i] = 11;
+				dzien++;
+			}else{
+				szkola[i] = 0; 
+				dzien++;
+			}
+			System.out.print(szkola[i] + " ");
+			
+			if(dzien > 7){
+				dzien = 1;
+				System.out.println();
+			}
+		}
+	}
+}
