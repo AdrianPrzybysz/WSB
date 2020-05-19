@@ -1,0 +1,12 @@
+package programowanie;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class cw56zad1 {
+    public static void main(String[] args) {
+        Date data = new Date();
+        SimpleDateFormat a = new SimpleDateFormat("dd-MM-yyyy hh:mm");
+        System.out.println("Data: " + a.format(data));
+    }
+}
