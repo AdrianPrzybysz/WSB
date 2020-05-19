@@ -1,0 +1,33 @@
+package programowanie;
+import java.util.Scanner;
+
+public class cw56zad2 {
+//=================================
+    private String imie;
+    private String nazwisko;
+    private String imie_i_nazwisko;
+//=================================
+
+    public String imie() {
+        System.out.println("Podaj swoje imie: ");
+        Scanner name = new Scanner(System.in);
+        return name.nextLine();
+    }
+
+    public String nazwisko() {
+        System.out.println("Podaj swoje nazwisko: ");
+        Scanner surname = new Scanner(System.in);
+        return surname.nextLine();
+    }
+
+    public cw56zad1() {
+        imie = imie();
+        nazwisko = nazwisko();
+        imie_i_nazwisko = imie + " " + nazwisko;
+        System.out.println("Nazywasz sie: " + imie_i_nazwisko.toUpperCase());
+    }
+
+    public static void main(String[] args) {
+		cw56zad2 z = new cw56zad2();
+    }
+}
