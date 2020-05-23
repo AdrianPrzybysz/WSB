@@ -1,0 +1,21 @@
+package programowanie;
+import java.util.Scanner;
+
+public class cw56zad4 {
+    public static void main(String args[]) {
+        Scanner dane = new Scanner(System.in);
+        System.out.print("Wpisz slowo ktore mam sprawdzic: ");
+	          String a = "";
+	          String b = "";
+        a = dane.nextLine();
+        int n = a.length();
+        for(int i=n-1; i>=0; i--) {
+            b+=a.charAt(i);
+        }
+        if(a.equalsIgnoreCase(b)) {
+        	  System.out.println("Wyraz '"+a+"' jest palindromem.");
+        }else{
+        	  System.out.println("Wyraz '"+a+"' nie jest palindromem.");
+        }
+    }
+}
