@@ -1,0 +1,38 @@
+package programowanie;
+import java.util.Scanner;
+
+class CiagGeometryczny {
+	int q;
+	int a1;
+	void wyswietl() {
+		System.out.println("Ciag geometryczny i jego dane:");
+		System.out.println("a1 = "+a1+", q = "+q);
+	}
+	int entyWyraz(int n) {
+		return (int) (a1*Math.pow(q,n-1));
+	}
+	int SumaCiaguGeom(int n) {
+		return (int) (a1*(1-Math.pow(q, n)) / (1-q));
+	}
+}
+
+public class cw78zad1 {
+	public static void main(String[] args) {
+		CiagGeometryczny ciag = new CiagGeometryczny();
+		Scanner dane = new Scanner(System.in);
+		System.out.println("Pobieram dane do obliczen");
+		System.out.print("Podaj a1: ");
+		ciag.a1 = dane.nextInt();
+		System.out.print("Podaj q: ");
+		ciag.q = dane.nextInt();
+		System.out.print("Ktory wyraz ciagu geometrycznego chcesz policzyc. Podaj q: ");
+		int enty;
+		enty = dane.nextInt();
+		System.out.println(enty+". z kolei wyraz ciagu geometrycznego wynosi: "+ciag.entyWyraz(enty));
+		System.out.print("Ile kolejnych liczb ciągu chcesz sumować: ");
+		int s;
+		s = dane.nextInt();
+		System.out.println("Suma kolejnych "+s+". wyrazów ciągu wynosi: "+ciag.SumaCiaguGeom(s));
+		dane.close();
+	}
+}
