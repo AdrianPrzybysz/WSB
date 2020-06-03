@@ -1,0 +1,9 @@
+print("Zapisuje ciag liczb do pliku. . .")
+
+file = open("plik.txt", "w+")
+for i in range(1, 21):
+    if i%4 == 0:
+        file.write(str(i)+" ")
+
+file.close()
+print("Zapisano.")
