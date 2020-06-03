@@ -1,0 +1,6 @@
+print("Odczytuje dane z pliku...")
+
+file = open("plik.txt", "r+")
+print(file.read())
+file.close()
+print("Odczytywanie zakonczone.")
